@@ -1,8 +1,36 @@
 :root {
   --main-text-color: #2e2f42;
+  --primiry-white-color: #ffffff;
+  --button-color: #4d5ae5;
+  --secondary-text-color: #434455;
 }
 body {
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
   background-color: #e5e5e5;
+  color: var(--main-text-color);
+}
+/*Navigation*/
+.page.navigation {
+  color: var(--main-text-color);
+}
+.page.navigation:hover {
+  color: #404bbf;
+}
+/*Button*/
+
+.button {
+  color: var(--main-text-color);
+  background-color: var(--primiry-white-color);
+}
+.button.primary {
+  background-color: var(--button-color);
+  color: var(--primiry-white-color);
+}
+.button.secondary {
+  background-color: #f4f4fd;
+  color: var(--button-color);
+}
+.button.primary:hover {
+  background-color: #404bbf;
 }
