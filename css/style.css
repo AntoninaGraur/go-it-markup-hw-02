@@ -76,28 +76,38 @@ body {
   letter-spacing: 0.02em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-/* 
-.privileges-title {
-  ,??????????
-  не зрозуміла як приховати текст?
-}  */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .button.primary {
   background-color: var(--button-color);
   color: var(--primiry-white-color);
   cursor: pointer;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.5;
   align-items: center;
   letter-spacing: 0.04em;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 16px 32px;
-  gap: 10px;
+}
+.button.secondary:hover,
+.button.secondary:focus {
+  background-color: #404bbf;
+  color: var(--primiry-white-color);
 }
 .button.primary:hover,
 .button.primary:focus {
   background-color: #404bbf;
+  color: var(--primiry-white-color);
 }
 /* Section Privileges*/
 .privileges-subtitle {
@@ -126,7 +136,6 @@ body {
   padding: 0px;
 }
 .section-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -165,7 +174,6 @@ body {
   color: var(--main-text-color);
 }
 .team-position {
-  font-weight: 400;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
@@ -186,10 +194,6 @@ body {
   text-decoration: none;
 }
 .logo-text {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #e7e9fc;
